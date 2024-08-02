@@ -134,8 +134,8 @@ EOF
 
 cat > /etc/systemd/journald.conf <<EOF  # 写入日志文件限制到 /etc/systemd/journald.conf 文件
 [Journal]
-SystemMaxUse=384M  # 设置日志文件最大使用空间为 384M
-SystemMaxFileSize=128M  # 设置单个日志文件最大大小为 128M
+SystemMaxUse=50M  # 设置日志文件最大使用空间为 384M
+SystemMaxFileSize=12M  # 设置单个日志文件最大大小为 128M
 ForwardToSyslog=no  # 禁止将日志转发到 syslog
 EOF
 
